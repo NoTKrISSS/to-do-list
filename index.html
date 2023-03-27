@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TodoList</title>
+    <link rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Todo List</h1>
+    </header>
+    <form>
+        <input type="text" class="todo-input" />
+        <button class="todo-button" type="submit">
+            <i class="add">&#43;</i>
+        </button>
+        <input type="datetime-local" id="time-input" />
+        <div class="select">
+            <select name="todos" class="sort-todo">
+                <option value="Recently added">Recently added</option>
+                <option value="Deadline">Deadline</option>
+                <option value="Recently completed">Recently completed</option>
+            </select>
+        </div>
+    </form>
+    <div class="todo-container">
+        <ul class="todo-list"></ul>
+        <ul class="completed-list todo-list"></ul>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
